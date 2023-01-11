@@ -1,0 +1,40 @@
+---
+---
+$container-width: 960px;
+$container-margin-width: 145px;
+
+@import '../_sass/main';
+@import '../_sass/post';
+@import '../_sass/nav';
+@import '../_sass/form';
+@import '../_sass/container';
+@import url("https://use.typekit.net/crp1kbb.css");
+
+
+body {
+    background: url('{{ site.url }}/{{ site.baseurl }}/files/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    text-decoration:none;
+
+    &:hover {
+        color:white;
+        background-color:$brand-color;
+    }
+
+    &:active {
+        color:white;
+        background-color:$brand-color;
+    }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+    body {
+        background-image: url('{{ site.url }}/{{ site.baseurl }}/files/background-mobile.jpg');
+    }
+}
