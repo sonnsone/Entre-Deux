@@ -45,52 +45,7 @@ kramdown:
     hard_wrap: false
 
 collections:
-    tea:
-        output: true
-
-    voyages:
-        output: true
-
-    puerh:
-        output: true
-
-    expositions:
-        output: true
-
-    ceremonie:
-        output: true
-
-    exceptionnels:
-        output: true
-
-    producteur:
-        output: true
-
-    rooibos:
-        output: true
-
-    infusion:
-        output: true
-
-    tisane:
-        output: true
-
-    noirsparfumes:
-        output: true
-
-    vertsparfumes:
-        output: true
-
-    thesnoirs:
-        output: true
-
-    thesfumes:
-        output: true
-
-    grandscrus:
-        output: true
-
-    oolong:
+    tuina:
         output: true
 
 # Sitemap
