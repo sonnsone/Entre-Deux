@@ -45,7 +45,7 @@
 
 <body class="container">
     <script type="text/javascript">
-        var github_url = 'https://sonnsone.github.io/';
+        var github_url = 'https://studioandco.github.io/';
         var current = window.location.href;
         if(current.indexOf(github_url) === 0) {
             window.location.href = '{{ page.url | absolute_url}}';
@@ -66,9 +66,7 @@
 
         <ul class="nav__list">
             <li><a href="{{ '/' | absolute_url }}" class="nav__item">accueil</a></li>
-            <li><a href="{{ '/pages/tuina.html' | absolute_url }}" class="nav__item">base</a></li>
-            <li><a href="{{ '/' | absolute_url }}" class="nav__item">accueil</a></li>
-            <li><a href="{{ '/pages/contact.html' | absolute_url }}" class="nav__item">contact</a></li>
+            <li><a href="{{ '/pages/tuina.html' | absolute_url }}" class="nav__item">tuina</a></li>
         </ul>
     </nav>
 
@@ -83,7 +81,7 @@
             {{ site.zip }} {{ site.city }} |
             {{ site.state }} - {{ site.country }} |
             <a href="mailto:{{ site.email }}">{{ site.email }}</a><br><br>
-            designed by <b><a href="http://www.andco.ch" target="blank">Studio ANDco</a></b>
+            designed by <b><a href="http://www.sonnsone.ch" target="blank">Sonnsone</a></b>
         </address>
     </footer>
 
