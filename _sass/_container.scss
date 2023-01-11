@@ -14,7 +14,7 @@
             margin-left: - (56 + $container-gutter-width);
             background: url('../files/tuina.png');
             height: 527px;
-            width: 120px;
+            width: 56px;
 
             h1 {
                 display: none;
@@ -43,7 +43,7 @@
 @media only screen and (max-width: $screen-sm-max) {
     .container__header {
         background: url('../files/tuina-h.png') center bottom no-repeat;
-        height: 150px;
+        height: 100px;
         width: 100%;
         margin-top: 10px;
 
