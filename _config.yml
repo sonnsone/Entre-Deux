@@ -48,6 +48,14 @@ collections:
     tuina:
         output: true
 
+collections:
+    contact:
+        output: true
+
+collections:
+    services:
+        output: true
+
 # Sitemap
 
 sitemap:

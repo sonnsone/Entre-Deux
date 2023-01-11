@@ -8,13 +8,44 @@ layout: base
     </div>
 </div>
 
-
-<div class="post-list">
-    {% assign posts = site.posts | sort: 'date' | reverse %}
-    {% for post in posts %}
-        <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
+<div class="grid grid--center mrgt+">
+<div class="post-list sm-w-1/2 md-w-1/3 lg-w-1/4 grid__item">
+    {% assign contact = site.contact | sort: 'date' | reverse %}
+    {% for post in contact %}
+        <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
+</div>
+
+<div class="post-list sm-w-1/2 md-w-1/3 lg-w-1/4 grid__item">
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="post-list sm-w-1/2 md-w-1/3 lg-w-1/4 grid__item">
+    {% assign tuina = site.tuina | sort: 'date' | reverse %}
+    {% for post in tuina %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="post-list sm-w-1/2 md-w-1/3 lg-w-1/4 grid__item">
+    {% assign services = site.services | sort: 'date' | reverse %}
+    {% for post in services %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
 </div>
