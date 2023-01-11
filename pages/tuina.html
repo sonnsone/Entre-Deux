@@ -5,7 +5,7 @@ layout: base
 <div class="post-list">
     {% assign tuina = site.tuina | sort: 'order' %}
     {% for post in tuina %}
-        <div class="post {% cycle 'post--left', 'post--right' %} lg-w-1/2">
+        <div class="post post--center w-1/1 grid__item">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>

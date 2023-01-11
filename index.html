@@ -6,9 +6,7 @@ layout: base
 {% assign services = site.services | sort: 'date' | reverse %}
 {% assign contact = site.contact | sort: 'date' | reverse %}
 
-<div class="grid grid--center mrgt+ mrgl+ mrgr+">
-
-<div class="post-list w-1/2 grid__item">
+<div class="post-list post--center w-1/1 grid__item">
     {% for post in posts %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
@@ -17,7 +15,7 @@ layout: base
     {% endfor %}
 </div>
 
-<div class="post-list w-1/2 grid__item">
+<div class="post-list post--center w-1/1 grid__item">
     {% for post in tuina %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
@@ -26,7 +24,7 @@ layout: base
     {% endfor %}
 </div>
 
-<div class="post-list w-1/2 grid__item">
+<div class="post-list post--center w-1/1 grid__item">
     {% for post in services %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
@@ -35,7 +33,7 @@ layout: base
     {% endfor %}
 </div>
 
-    <div class="post-list w-1/2 grid__item">
+    <div class="post-list post--center w-1/1 grid__item">
         {% for post in contact %}
             <div class="post">
                 <h1 class="post__title">{{ post.title }}</h1>
@@ -43,5 +41,3 @@ layout: base
             </div>
         {% endfor %}
     </div>
-
-</div>
