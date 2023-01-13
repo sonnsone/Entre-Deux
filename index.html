@@ -6,36 +6,36 @@ layout: base
 {% assign propos = site.propos | sort: 'name' %}
 {% assign contact = site.contact | sort: 'name' %}
 
-<div class="post-list post--center w-1/1 grid__item">
+<div class="post-list post--center w-1/1">
     {% for post in tuina %}
-        <div class="post">
+        <div>
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
 </div>
 
-<div class="post-list post--center w-1/1 grid__item">
+<div class="post-list post--center w-1/1">
     {% for post in propos %}
-        <div class="post">
+        <div>
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
 </div>
 
-    <div class="post-list post--center w-1/1 grid__item">
+    <div class="post-list post--center w-1/1">
         {% for post in contact %}
-            <div class="post">
+            <div>
                 <h1 class="post__title">{{ post.title }}</h1>
                 {{ post.content }}
             </div>
         {% endfor %}
     </div>
 
-    <div class="post-list post--center w-1/1 grid__item">
+    <div class="post-list post--center w-1/1">
         {% for post in posts %}
-            <div class="post">
+            <div>
                 <h1 class="post__title">{{ post.title }}</h1>
                 {{ post.content }}
             </div>
