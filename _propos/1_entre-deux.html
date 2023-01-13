@@ -4,3 +4,13 @@ title: Un moment un rencontre  期 會
 ---
 
 <p>L’espace Entre-deux est un lieu serein et apaisant, discret dans les rues étroites de la vieille ville de Sion. Il vous ouvre les portes vers ce monde sensoriel qui est le votre où vous dégusterez une infusion aux arômes qui vous immergeront sur les sons de votre corps. Cette rencontre apaisera votre âme et vous redonnera vitalité.</p>
+
+<div class="post-list">
+    {% for image in site.static_files %}
+        {% if image.path contains '/files/entre-deux' %}
+            <div class="post img-responsive">
+                <img src="{{ image.path | absolute_url }}" alt="image" />
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
