@@ -12,7 +12,7 @@ $container-margin-width: 145px;
 
 
 body {
-    background: url('{{ site.url }}/{{ site.baseurl }}/files/background.jpg') no-repeat center center fixed;
+    background-color:$main-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -6,7 +6,7 @@ layout: base
     {% assign propos = site.propos | sort: 'order' %}
     {% for post in propos %}
         <div class="post">
-            <h1 class="post__title box box--default">{{ post.title }}</h1>
+            <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
