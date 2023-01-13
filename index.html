@@ -1,10 +1,10 @@
 ---
 layout: base
 ---
-{% assign posts = site.posts | sort: 'date' | reverse %}
-{% assign tuina = site.tuina | sort: 'date' | reverse %}
-{% assign propos = site.propos | sort: 'date' | reverse %}
-{% assign contact = site.contact | sort: 'date' | reverse %}
+{% assign posts = site.posts | sort: 'name' %}
+{% assign tuina = site.tuina | sort: 'name' %}
+{% assign propos = site.propos | sort: 'name' %}
+{% assign contact = site.contact | sort: 'name' %}
 
 <div class="post-list post--center w-1/1 grid__item">
     {% for post in tuina %}
