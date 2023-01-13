@@ -8,8 +8,8 @@ layout: base
 
 <div class="post-list post--center w-1/1 grid__item">
     {% for post in tuina %}
-        <div class="post box box--default">
-            <h1 class="post__title">{{ post.title }}</h1>
+        <div class="post">
+            <h1 class="post__title box box--default">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
@@ -17,8 +17,8 @@ layout: base
 
 <div class="post-list post--center w-1/1 grid__item">
     {% for post in propos %}
-        <div class="post box box--default">
-            <h1 class="post__title">{{ post.title }}</h1>
+        <div class="post">
+            <h1 class="post__title box box--default">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
@@ -26,8 +26,8 @@ layout: base
 
     <div class="post-list post--center w-1/1 grid__item">
         {% for post in contact %}
-            <div class="post box box--default">
-                <h1 class="post__title">{{ post.title }}</h1>
+            <div class="post">
+                <h1 class="post__title box box--default">{{ post.title }}</h1>
                 {{ post.content }}
             </div>
         {% endfor %}
@@ -35,8 +35,8 @@ layout: base
 
     <div class="post-list post--center w-1/1 grid__item">
         {% for post in posts %}
-            <div class="post box box--default">
-                <h1 class="post__title">{{ post.title }}</h1>
+            <div class="post">
+                <h1 class="post__title box box--default">{{ post.title }}</h1>
                 {{ post.content }}
             </div>
         {% endfor %}
