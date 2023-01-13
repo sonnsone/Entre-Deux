@@ -3,8 +3,8 @@ layout: base
 ---
 
 <div class="post-list post-list post--center w-1/1 grid__item">
-    {% assign services = site.services | sort: 'order' %}
-    {% for post in services %}
+    {% assign propos = site.propos | sort: 'order' %}
+    {% for post in propos %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
