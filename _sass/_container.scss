@@ -11,10 +11,10 @@
         }
 
         .container__header {
-            margin-left: - (100 + $container-gutter-width);
-            background: url('../files/logo.png');
-            height: 554px;
-            width: 100px;
+            margin-left: - (120 + $container-gutter-width);
+            background: url('../files/logo.png') no-repeat;
+            height: 527px;
+            width: 120px;
 
             h1 {
                 display: none;
@@ -43,7 +43,7 @@
 @media only screen and (max-width: $screen-sm-max) {
     .container__header {
         background: url('../files/logo-h.png') center bottom no-repeat;
-        height: 120px;
+        height: 150px;
         width: 100%;
         margin-top: 10px;
 
