@@ -7,12 +7,9 @@ layout: base
 {% assign contact = site.contact | sort: 'name' %}
 
 <div class="post-list post--center w-1/1">
-    {% for post in posts %}
         <div class="post">
-            <h1 class="post__title">{{ post.title }}</h1>
-            {{ post.content }}
-        </div>
-    {% endfor %}
+            <h1 class="post__title">Entre-Deux</h1>
+<p>Après plusieurs années d'apprentissage à Taïwan, je suis de retour à Sion. Venez me rendre visite dans mon cabinet, Rue de la Cathédrale pour un massage TuiNa. Un soin à nature préventive et thérapeutique, qui panse le corps dans sa globalité. Je vous ouvre ainsi une porte sur votre monde intérieur dans un espace serein. Cette rencontre soulagera vos maux et vous remettra d'aplomb.</p>
 </div>
 
 <div class="post-list post--center w-1/1">
@@ -33,11 +30,20 @@ layout: base
     {% endfor %}
 </div>
 
-    <div class="post-list post--center w-1/1">
-        {% for post in contact %}
-            <div class="post">
-                <h1 class="post__title">{{ post.title }}</h1>
-                {{ post.content }}
+<div class="post-list post--center w-1/1">
+    {% for post in contact %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
             </div>
-        {% endfor %}
-    </div>
+    {% endfor %}
+</div>
+
+<div class="post-list post--center w-1/1">
+    {% for post in posts %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
