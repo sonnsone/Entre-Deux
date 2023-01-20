@@ -6,14 +6,3 @@ title: Tarif
 <p><strong>Massage complet</strong>
 <br>70 minutes
 <br>100 CHF</p>
-
-
-<div class="post-list">
-    {% for image in site.static_files %}
-        {% if image.path contains '/files/cabinet' %}
-            <div class="post img-responsive">
-                <img src="{{ image.path | absolute_url }}" alt="image" />
-            </div>
-        {% endif %}
-    {% endfor %}
-</div>
