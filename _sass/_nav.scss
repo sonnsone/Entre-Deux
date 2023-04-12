@@ -5,15 +5,14 @@
 }
 
 .nav__item {
-    color:$brand-color;
+    color:white;
+    background-color:black;
     display:inline-block;
     justify-content:left;
     font-size:$font-size-small;
     text-transform:Uppercase;
     font-weight:bold;
     padding:5px;
-    border-style:solid;
-    border-width:2px;
     width:fit-content;
     margin:auto;
     margin-top:$small-margin;

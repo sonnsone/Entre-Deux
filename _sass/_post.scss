@@ -35,15 +35,14 @@
 }
 
 .post__title {
-    color:$brand-color;
+    color:white;
+    background-color:black;
     display:inline-block;
     justify-content:left;
     font-size:$font-size-large;
     text-transform:uppercase;
     font-weight:bold;
     padding:6px 10px 6px 10px;
-    border-top:2px solid;
-    border-bottom:2px solid;
     width:auto;
     margin:auto;
     margin-top:$normal-margin;
