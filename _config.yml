@@ -45,7 +45,7 @@ kramdown:
     hard_wrap: false
 
 collections:
-    tuina:
+    espace:
         output: true
 
     contact:

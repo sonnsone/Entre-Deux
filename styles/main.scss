@@ -19,6 +19,11 @@ body {
     background-size: cover;
 }
 
+strong {
+    background-color:$brand-color;
+    color:white;
+}
+
 a {
     text-decoration:none;
 

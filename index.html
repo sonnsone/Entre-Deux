@@ -2,26 +2,29 @@
 layout: base
 ---
 {% assign posts = site.posts | sort: 'date' %}
-{% assign tuina = site.tuina | sort: 'name' %}
+{% assign tuina = site.espace | sort: 'name' %}
 {% assign propos = site.propos | sort: 'name' %}
 {% assign contact = site.contact | sort: 'name' %}
 
-<div class="post-list post--center w-1/1">
-        <div class="post">
-            <h1 class="post__title">Entre-Deux</h1>
-<p>Après plusieurs années d'apprentissage à Taïwan, je suis de retour à Sion. Venez me rendre visite dans mon cabinet, Rue de la Cathédrale pour un massage TuiNa. Un soin à nature préventive et thérapeutique, qui panse le corps dans sa globalité. Je vous ouvre ainsi une porte sur votre monde intérieur dans un espace serein. Cette rencontre soulagera vos maux et vous remettra d'aplomb.</p>
+<div class="post-list">
+    <div class="post img-responsive">
+        <img src="'../files/intro.png'">
+    </div>
+</div>
+<div class="grid grid--center">
+    <div class="sm-w-1/1 md-w-1/2 lg-w-1/2 grid__item">
+        <p>
+            Suite à plusieurs années d’apprentissage sur l’île de Taïwan, je suis maintenant établi au coeur des montagnes. Venez me rendre visite pour un massage énergétique, aux méthodes de soins traditionnelles populaires de Taïwan, <strong>ZhěngFù/TuīNá</strong>.
+        </p>
+    </div>    
+    <div class="sm-w-1/1 md-w-1/2 lg-w-1/2 grid__item">
+        <p>
+            Cette pratique aux gestes dynamiques et rythmiques, tel un calligraphe, vous accompagnera dans un voyage sensoriel, au travers de votre corps, esprit et émotions pour alléger votre vie.
+        </p>
+    </div>
 </div>
 
-<div class="post-list post--center w-1/1">
-    {% for post in tuina %}
-        <div class="post">
-            <h1 class="post__title">{{ post.title }}</h1>
-            {{ post.content }}
-        </div>
-    {% endfor %}
-</div>
-
-<div class="post-list post--center w-1/1">
+<div class="post-list post--center w-1/1" id="apropos">
     {% for post in propos %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
@@ -30,7 +33,7 @@ layout: base
     {% endfor %}
 </div>
 
-<div class="post-list post--center w-1/1">
+<div class="post-list post--center w-1/1" id="contact">
     {% for post in contact %}
         <div class="post">
             <h1 class="post__title">{{ post.title }}</h1>
@@ -38,6 +41,17 @@ layout: base
             </div>
     {% endfor %}
 </div>
+
+<div class="post-list post--center w-1/1" id="espace">
+    {% for post in espace %}
+        <div class="post">
+            <h1 class="post__title">{{ post.title }}</h1>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+</div>
+
+
 
 <div class="post-list post--center w-1/1">
     {% for post in posts %}
