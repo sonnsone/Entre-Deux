@@ -6,7 +6,7 @@ layout: base
 {% assign propos = site.propos | sort: 'name' %}
 {% assign contact = site.contact | sort: 'name' %}
 
-<div class="post-list">
+<div class="post-list post--center w-1/1">
     <div class="post img-responsive">
         <img src="'../files/intro.png'">
     </div>
@@ -45,7 +45,6 @@ layout: base
 <div class="post-list post--center w-1/1" id="espace">
     {% for post in espace %}
         <div class="post">
-            <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}

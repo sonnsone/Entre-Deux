@@ -6,7 +6,6 @@ layout: base
     {% assign tuina = site.espace | sort: 'order' %}
     {% for post in espace %}
         <div class="post">
-            <h1 class="post__title">{{ post.title }}</h1>
             {{ post.content }}
         </div>
     {% endfor %}
