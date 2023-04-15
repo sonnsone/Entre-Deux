@@ -43,16 +43,16 @@ layout: base
 </div>
 
 <div class="post-list post--center w-1/1" id="espace">
-        {% for image in site.static_files %}
-            {% if image.path contains '/files/theieres' %}
-                <div class="post img-responsive">
-                    <img src="{{ image.path | absolute_url }}" alt="image" />
-                </div>
-            {% endif %}
-        {% endfor %}
+    <div class="post img-responsive">
+        <img src="../files/cabinet/1-entrance.png">
+    </div>
+    <div class="post img-responsive">
+        <img src="../files/cabinet/2-plante.png">
+    </div>
+    <div class="post img-responsive">
+        <img src="../files/cabinet/3-cabinet.png">
+    </div>
 </div>
-
-
 
 <div class="post-list post--center w-1/1">
     {% for post in posts %}
